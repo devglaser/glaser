@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="https://glaser.vercel.app/imgs/imagem.jpg"/>
         <meta property="og:url" content="https://glaser.vercel.app"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="Danke Eventos"/>
+        <meta property="og:site_name" content="Desenvolvedor e Designer Web - Daniel_GLaser"/>
       </head>
       <body className={montserrat.className}>{children}</body>
     </html>
