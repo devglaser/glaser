@@ -1,0 +1,380 @@
+section#ChamaPrincipal {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal {
+    height: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  section#ChamaPrincipal {
+    height: 912px;
+  }
+}
+section#ChamaPrincipal main#textosChamada {
+  padding: 10% 0 0 100px;
+  height: 100vh;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal main#textosChamada {
+    padding: 150px 0 0 75px;
+  }
+}
+section#ChamaPrincipal main#textosChamada > span {
+  position: relative;
+  left: 15px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #17EEEF, #7cfc00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section#ChamaPrincipal main#textosChamada > span svg {
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  z-index: -1;
+}
+section#ChamaPrincipal main#textosChamada > span svg rect {
+  fill: #222;
+  stroke: url("#myGradient");
+  stroke-width: 1;
+}
+section#ChamaPrincipal main#textosChamada h1 {
+  font-weight: 400;
+  font-size: 2.625rem;
+  margin-top: 10px;
+}
+section#ChamaPrincipal main#textosChamada h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin: 25px 0 25px 0;
+  max-width: 535px;
+}
+section#ChamaPrincipal main#textosChamada h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 586px;
+  margin-bottom: 25px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section#ChamaPrincipal main#textosChamada {
+    padding: 125px 15px 0 15px;
+  }
+  section#ChamaPrincipal main#textosChamada span {
+    font-size: 1rem;
+  }
+  section#ChamaPrincipal main#textosChamada span svg {
+    width: 306;
+    height: 41px;
+  }
+  section#ChamaPrincipal main#textosChamada span svg rect {
+    width: 296px;
+    height: 31px;
+  }
+  section#ChamaPrincipal main#textosChamada h1 {
+    font-size: 2rem;
+  }
+  section#ChamaPrincipal main#textosChamada h2 {
+    font-size: 1.188rem;
+  }
+  section#ChamaPrincipal main#textosChamada h3 {
+    font-size: 1rem;
+  }
+}
+section#ChamaPrincipal #ilustracoes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section#ChamaPrincipal #ilustracoes * {
+  transition: all 0.5s;
+}
+section#ChamaPrincipal #ilustracoes div {
+  position: absolute;
+}
+section#ChamaPrincipal #ilustracoes #nuvensTop {
+  right: 0;
+  width: 733px;
+  height: 337px;
+}
+@media (min-width: 1280px) {
+  section#ChamaPrincipal #ilustracoes #nuvensTop {
+    top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal #ilustracoes #nuvensTop {
+    transform: scale(0.685);
+    bottom: 200px;
+  }
+}
+@media (max-width: 767px) {
+  section#ChamaPrincipal #ilustracoes #nuvensTop {
+    transform: scale(0.44);
+    bottom: 142px;
+    right: -55%;
+  }
+}
+section#ChamaPrincipal #ilustracoes #nuvensTop #nuvenTop {
+  position: relative;
+  animation: nuvemTop 20s ease-in-out infinite;
+}
+section#ChamaPrincipal #ilustracoes #nuvensTop #nuvenTop:nth-child(2) {
+  top: 226px;
+  left: 38px;
+  animation-duration: 15s;
+}
+section#ChamaPrincipal #ilustracoes #nuvensTop #nuvenTop:nth-child(3) {
+  top: 0px;
+  left: 490px;
+  animation-duration: 10s;
+}
+@keyframes nuvemTop {
+  50% {
+    transform: translate(-10%);
+  }
+}
+section#ChamaPrincipal #ilustracoes #ilustraTrofeu {
+  overflow: hidden;
+  bottom: -6.5px;
+  right: 100px;
+  z-index: 999;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal #ilustracoes #ilustraTrofeu {
+    right: 50%;
+    bottom: -10%;
+    transform: translate(50%) scale(0.673);
+  }
+}
+@media (max-width: 767px) {
+  section#ChamaPrincipal #ilustracoes #ilustraTrofeu {
+    right: 50%;
+    bottom: -12.1%;
+    transform: translate(50%) scale(0.665);
+  }
+}
+section#ChamaPrincipal #ilustracoes #nuvemCentroBack {
+  bottom: -121px;
+  left: -64px;
+  right: -40px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal #ilustracoes #nuvemCentroBack {
+    transform: scale(0.8) translate(-50%);
+    left: 1%;
+    right: 0;
+    bottom: -15%;
+  }
+}
+@media (max-width: 767px) {
+  section#ChamaPrincipal #ilustracoes #nuvemCentroBack {
+    transform: scale(0.55) translate(-50%);
+    left: -53%;
+    right: 0;
+    bottom: -15%;
+  }
+}
+section#ChamaPrincipal #ilustracoes #nuvemEsquerdaFront {
+  bottom: -115px;
+  left: -82px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal #ilustracoes #nuvemEsquerdaFront {
+    transform: scale(0.753);
+    bottom: -10%;
+    left: -37%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section#ChamaPrincipal #ilustracoes #nuvemEsquerdaFront {
+    transform: scale(0.789) translate(-50%);
+    left: -58%;
+    right: 0;
+    bottom: -11.5%;
+  }
+}
+section#ChamaPrincipal #ilustracoes #nuvemDireitaFront {
+  bottom: -89px;
+  right: -98px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#ChamaPrincipal #ilustracoes #nuvemDireitaFront {
+    transform: scale(0.753);
+    bottom: -10%;
+    right: -37%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section#ChamaPrincipal #ilustracoes #nuvemDireitaFront {
+    transform: scale(0.74);
+    bottom: -10%;
+    right: -125%;
+  }
+}
+
+section#beneficios {
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  section#beneficios {
+    padding: 50px 75px;
+  }
+}
+@media (max-width: 767px) {
+  section#beneficios {
+    padding: 50px 15px;
+  }
+}
+section#beneficios h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 75px;
+  max-width: 575px;
+  text-align: center;
+}
+section#beneficios h1 span {
+  font-weight: 700;
+}
+section#beneficios #listaBeneficios {
+  max-width: 1166px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 25px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#beneficios #listaBeneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  section#beneficios #listaBeneficios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px 0;
+  }
+}
+section#beneficios #listaBeneficios .itemListaBeneficios div {
+  height: 43px;
+  margin-bottom: 15px;
+}
+section#beneficios #listaBeneficios .itemListaBeneficios div div {
+  display: inline-flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+section#beneficios #listaBeneficios .itemListaBeneficios div div:nth-child(1) {
+  margin-right: 15px;
+  height: 43px;
+  width: 43px;
+  background: #17EEEF;
+  color: #111;
+  line-height: 43px;
+  text-align: center;
+}
+section#beneficios #listaBeneficios .itemListaBeneficios div div:nth-child(1) span {
+  width: 100%;
+  font-weight: 700;
+}
+section#beneficios #listaBeneficios .itemListaBeneficios div div:nth-child(2) {
+  color: #17EEEF;
+}
+section#beneficios #listaBeneficios .itemListaBeneficios p {
+  font-weight: 300;
+}
+section#beneficios h2 {
+  margin: 75px 0 25px 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  max-width: 545px;
+  text-align: center;
+}
+
+section#eu {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(34, 34, 34, 0.25);
+}
+@media (max-width: 1280px) {
+  section#eu {
+    flex-direction: column-reverse;
+  }
+  section#eu main {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section#eu {
+    padding: 75px;
+  }
+}
+section#eu main h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: lawngreen;
+}
+section#eu main h2 {
+  margin: 5px 0 25px 0;
+  font-size: 2.625rem;
+  font-weight: 700;
+}
+section#eu main h3 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  max-width: 460px;
+}
+section#eu main p {
+  max-width: 625px;
+}
+section#eu main p:nth-child(5) {
+  margin: 15px 0 35px 0;
+}
+section#eu main p:nth-child(7) {
+  margin: 35px 0 15px 0;
+  max-width: 420px;
+  font-weight: 500;
+}
+section#eu main ul li {
+  display: inline;
+  margin-right: 15px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section#eu {
+    padding: 50px 15px;
+  }
+  section#eu main h1 {
+    font-size: 1rem;
+  }
+  section#eu main h2 {
+    font-size: 2rem;
+  }
+  section#eu main h3 {
+    font-size: 1.188rem;
+    max-width: 328px;
+  }
+}
+section#eu div {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 395px;
+  max-height: 395px;
+}
+@media (max-width: 767px) {
+  section#eu div {
+    transform: scale(0.7);
+  }
+}/*# sourceMappingURL=home.module.css.map */

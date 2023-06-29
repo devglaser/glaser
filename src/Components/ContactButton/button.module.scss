@@ -1,0 +1,23 @@
+#buttonLink{
+    position: relative;
+    left: -10px;
+    width: 265px; height: 45px;
+    display: flex;
+    line-height: 55px;
+    padding-left: 70px;
+    font-weight: 700;
+    
+    &:hover>svg>rect{fill: url('#myGradient');}
+    
+    svg{
+        position: absolute;
+        top: 0;left:0;
+        z-index: -1;
+        
+        rect{
+            fill: transparent;
+            stroke: url('#myGradient');
+            stroke-width: 2.5;
+        }
+    }
+}
